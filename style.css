@@ -12,6 +12,10 @@ h1{
     color: blue;
 }
 
+*{
+    transition: all 0.3s cubic-bezier(0,.78,.99,-0.02);
+}
+
 #container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
@@ -33,14 +37,27 @@ h1{
     object-fit: cover;
 }
 
+
+
 .big{
     grid-column: auto/ span 2;
     grid-row: auto/ span 2;
+   
+}
+.big:hover{
+    grid-column: auto/ span 4;
+    grid-row: auto/ span 4;
 }
 .horizontal{
     grid-column: auto/ span 2;
 }
+.horizontal:hover{
+    grid-column: auto/ span 4;
+}
 
 .ver{
     grid-row: auto/ span 2;
+}
+.ver:hover{
+    grid-row: auto/ span 4;
 }
